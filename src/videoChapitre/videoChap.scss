@@ -1,0 +1,87 @@
+$greenColor: rgba(17, 209, 69, 0.9);
+$trueGreen : rgba(27, 179, 159, 1);
+$greenLessColor : rgba(27, 179, 159, 0.1);
+$orange : rgba(255, 127, 39, 0.9);
+
+.videoChapContainer{
+    background-color: white;
+    padding: 1em;
+    border-radius: 15px;
+    text-align: center;
+
+   .mainContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+
+   .titleChapitre {
+       margin-bottom: 1.5em;
+   }
+
+}
+
+.videoContainerCours{
+
+    .startVideoBtn {
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 0.8em;
+        font-size: 14px;
+        font-weight: 650;
+        }
+
+    .controllersVideo {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
+    .videoCours{
+        width: 500px;
+        margin: auto;
+
+        video
+        {
+            border-radius: 15px;
+            
+        }
+    }
+}
+
+.backMenu {
+    margin-bottom: 1em;
+}
+
+.ctrlBtn {
+    height: auto;
+}
+
+.webCam
+{
+    margin: auto;
+}
+
+.webCamContainer{
+    display: flex;
+    flex-direction: column;
+
+    video {
+        border-radius: 10px;
+    }
+
+    button {
+        max-width: 300px;
+        margin: auto;
+        margin-top: 1em;
+    }
+}
+
+.formContainer
+{
+    display: flex;
+    justify-content: center;
+
+    form{
+    
+    }
+}

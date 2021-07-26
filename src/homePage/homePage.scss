@@ -1,0 +1,102 @@
+$greenColor: rgba(17, 209, 69, 0.95);
+$trueGreen : rgba(27, 179, 159, 1);
+$greenLessColor : rgba(27, 179, 159, 0.1);
+$orange : rgba(255, 127, 39, 0.95);
+$yellow : rgba(255,202,24, 1);
+
+.button {
+    list-style: none;
+    background-color: $greenColor;
+    padding: 10px;
+    border-radius: 5px;
+    color: White;
+    text-transform: capitalize;
+    margin: 0.4em;
+    box-shadow: 0px 0px 0.95px 0.95px $greenColor;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+    .videoContainerCours
+
+    .logo {
+        margin-top: 1.5em;
+}
+
+body{
+    padding: 2em;
+    background-color: $orange;
+}
+
+.homePage{
+
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 1em; 
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    
+     .mainTitle
+     {
+        color: rgb(27, 48, 37);
+     }
+
+    .presentationContainer
+    {
+        margin: auto;
+    }
+
+    .tarif 
+    {
+        button 
+        {
+            font-size: 14px;
+            margin-bottom: 2em;
+            margin-top: 2em!important; 
+            text-transform: capitalize;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .menuList{
+        
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        padding: 0;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: auto;
+        flex-direction: column;
+        margin-bottom: 1em;
+
+        button 
+        {
+            margin-top: 1em;
+        }
+
+    }
+
+    .videoContainer
+    {
+        text-align: center;
+        width: 500px;
+        margin: auto;
+        overflow: hidden;
+        margin-top: 1em;
+        
+        .react-player
+        {
+            
+            video 
+            {
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+.textDowland
+{
+    font-size: 20px;
+}
