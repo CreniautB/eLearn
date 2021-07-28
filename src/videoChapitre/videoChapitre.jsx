@@ -14,11 +14,22 @@ const VideoChapitre = ({idChap,titleChap, setRecordedChunks, idVideo, setIdVideo
   const [capturing, setCapturing] = React.useState(false);
   const [play, setPlay] = React.useState(false)
 
+  const constraints = {
+    'video': true,
+    'audio': true
+}
+navigator.mediaDevices.getUserMedia(constraints)
+    .then(stream => {
+        console.log('Got MediaStream:', stream);
+    })
+    .catch(error => {
+        console.error('Error accessing media devices.', error);
+    });
+
   useEffect(() => {
     if(play){
     const interval = setInterval(() => {
       setCount(count => count - 1);
-      console.log(count)
       if (count <= 0 ){
         if (!endIt){
         setIdVideo(idVideo+1);
@@ -42,7 +53,7 @@ const VideoChapitre = ({idChap,titleChap, setRecordedChunks, idVideo, setIdVideo
       getCounter();
       setPlay(true);
       setCapturing(true)
-      mediaRecorderRef.current = new MediaRecorder(webcamRef.current.stream, {
+      mediaRecorderRef.current =  new MediaRecorder(webcamRef.current.stream, {
         mimeType: "video/webm"
       });
       mediaRecorderRef.current.addEventListener(
@@ -81,7 +92,7 @@ const VideoChapitre = ({idChap,titleChap, setRecordedChunks, idVideo, setIdVideo
               </div>
 
             <div className='webCamContainer'>
-              <Webcam width="400px" className='webCam' audio={true} ref={webcamRef} />
+              <Webcam width="400px" className='webCam' audio={true} ref={webcamRef} autoPlay={true} />
               {capturing ? (<span className='button'>Il vous reste <strong>{parseInt(count)}</strong> seconde <br/>Pour cette question</span>) : (<></>)}
               </div>
           </div>
