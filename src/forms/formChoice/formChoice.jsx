@@ -34,7 +34,6 @@ const FormChoice = ({privateOrPublic}) => {
                 <h3>
                     {text}
                 </h3>
-                <a href={'mailto:'+email} >go to mail</a>
                 <form action={'mailto:'+email} method="get" encType="text/plain">
                     <p>Votre Nom et Prénom <input type="text" name="name" required/></p>
                     <p>Votre Email<input type="text" name="email" required/></p>
