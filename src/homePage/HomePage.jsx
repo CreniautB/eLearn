@@ -13,6 +13,7 @@ function HomePage (list) {
     const [titleChap, setTitleChap] = useState(false)
     const [recordedChunks, setRecordedChunks] = React.useState([]);
     const [idVideo, setIdVideo] = useState(1)
+    const [blobb, setblobb] = useState(null)
 
     function goToChapitre(idChapitre, e) {
         e.preventDefault();
@@ -66,13 +67,13 @@ function HomePage (list) {
     else{
         if(endIt){
             return(
-            <Forms recordedChunks={recordedChunks} setRecordedChunks={setRecordedChunks} />
+            <Forms recordedChunks={recordedChunks} setRecordedChunks={setRecordedChunks} setblobb={setblobb} blobb={blobb} />
             ) 
         }
         else {
              return(
                 <div>
-                    <VideoChapitre idChap={idChap} list={list}  setIdChap={setIdChap} titleChap={titleChap} endIt={endIt} setIdVideo={setIdVideo} idVideo={idVideo} recordedChunks={recordedChunks} setRecordedChunks={setRecordedChunks}/>
+                    <VideoChapitre  idChap={idChap} list={list}  setIdChap={setIdChap} titleChap={titleChap} endIt={endIt} setIdVideo={setIdVideo} idVideo={idVideo} recordedChunks={recordedChunks} setRecordedChunks={setRecordedChunks} setblobb={setblobb} blobb={blobb} />
                 </div>
                 )
              }

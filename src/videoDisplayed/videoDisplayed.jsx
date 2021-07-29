@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactPlayer from 'react-player'
 
-const VideoDisplayed = ({idVideo, idChap, videooo, play}) => {
+const VideoDisplayed = ({idVideo, idChap, video, play}) => {
 
 
     let url = 'videoSource/'+idChap+'/'+idVideo+'.mp4'
@@ -15,7 +15,7 @@ const VideoDisplayed = ({idVideo, idChap, videooo, play}) => {
                 width='500px'
                 height='auto'
                 controls = {true}
-                ref = {videooo}
+                ref = {video}
                 playing = {play}
             />
     </div>

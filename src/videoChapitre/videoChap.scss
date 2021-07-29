@@ -3,11 +3,17 @@ $trueGreen : rgba(27, 179, 159, 1);
 $greenLessColor : rgba(27, 179, 159, 0.1);
 $orange : rgba(255, 127, 39, 0.9);
 
+html, body
+{
+    min-height: 100%;
+}
+
 .videoChapContainer{
-    background-color: white;
+    min-height: 90%;
     padding: 1em;
     border-radius: 15px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
 
    .mainContainer{
     display: flex;
@@ -81,7 +87,40 @@ $orange : rgba(255, 127, 39, 0.9);
     display: flex;
     justify-content: center;
 
-    form{
-    
+  
+}
+
+
+@media screen and (max-width: 500px) {
+
+    html {
+        background-color: rgba(255, 255, 255, 0.9);
+        height: 100%;
+    }
+    #root {
+        
+    }
+   
+    .videoChapContainer{
+        border-radius: 3px;
+
+        .videoCours{
+            width: 300px;
+            
+                .react-player {
+                    width: 300px!important;
+                }
+        
+        }
+
+        .webCamContainer{
+            width: 300px;
+            margin-bottom: 6em;
+            video {
+                width: 300px;
+            }
+        }
+
+
     }
 }

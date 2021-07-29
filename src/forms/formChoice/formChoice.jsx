@@ -11,7 +11,7 @@ const FormChoice = ({privateOrPublic}) => {
     if(privateOrPublic === 'public') {
         // setWichEmail('avi.ang.public@gmail.com')
         email = 'avi.ang.public@gmail.com'
-        text = "Vous autorisez pas CallDesk à utiliser cette vidéo pour des diffusions externes"
+        text = "Vous autorisez CallDesk à utiliser cette vidéo pour des diffusions externes"
     }
     if(privateOrPublic === 'prive'){
         // setWichEmail('avi.ang.prive@gmail.com')

@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import FormChoice from "./formChoice/formChoice";
 
-const Forms = ({recordedChunks, setRecordedChunks}) => {
+const Forms = ({recordedChunks, setRecordedChunks, setblobb, blobb}) => {
 
   const [privateOrPublic, setPrivateOrPublic] = useState(false)
+
 
   function setPublic(e) {
     e.preventDefault();
@@ -22,7 +23,7 @@ const Forms = ({recordedChunks, setRecordedChunks}) => {
       const blob = new Blob(recordedChunks, {
         type: "video/mp4"
       });
-      var url = URL.createObjectURL(blob);
+      const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       document.body.appendChild(a);
       a.style = "display: none";

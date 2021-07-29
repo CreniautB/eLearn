@@ -1,8 +1,13 @@
+html, body {
+  min-height: 100%;
+}
+
 .videoChapContainer {
-  background-color: white;
+  min-height: 90%;
   padding: 1em;
   border-radius: 15px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .videoChapContainer .mainContainer {
@@ -80,5 +85,28 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+  }
+  .videoChapContainer {
+    border-radius: 3px;
+  }
+  .videoChapContainer .videoCours {
+    width: 300px;
+  }
+  .videoChapContainer .videoCours .react-player {
+    width: 300px !important;
+  }
+  .videoChapContainer .webCamContainer {
+    width: 300px;
+    margin-bottom: 6em;
+  }
+  .videoChapContainer .webCamContainer video {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=videoChap.css.map */

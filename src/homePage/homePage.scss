@@ -4,6 +4,8 @@ $greenLessColor : rgba(27, 179, 159, 0.1);
 $orange : rgba(255, 127, 39, 0.95);
 $yellow : rgba(255,202,24, 1);
 
+
+
 .button {
     list-style: none;
     background-color: $greenColor;
@@ -100,3 +102,49 @@ body{
 {
     font-size: 20px;
 }
+
+
+
+@media screen and (max-width: 500px) {
+    
+    body {
+        padding: 0.5em;
+
+    }
+    .homePage{
+        flex-direction: column;
+        border-radius: 3px;
+
+        .logo{
+            width: 90px;
+            margin-top: 1em;
+        }
+
+        .videoContainer{
+            width: 300px;
+            .react-player{
+                width: 300px!important;
+                video 
+                {
+                    width: 300px;
+                }
+            }
+        }
+
+        .menuList{
+            width: 90%;
+
+            .button 
+            {
+                margin-top: 0.5em;
+            }
+            .tarif {
+                .button
+                {
+                    margin-bottom: 0.5em ;
+                }
+            }
+        }
+    }
+
+  }

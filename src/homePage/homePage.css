@@ -88,4 +88,39 @@ body {
 .textDowland {
   font-size: 20px;
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0.5em;
+  }
+  .homePage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 3px;
+  }
+  .homePage .logo {
+    width: 90px;
+    margin-top: 1em;
+  }
+  .homePage .videoContainer {
+    width: 300px;
+  }
+  .homePage .videoContainer .react-player {
+    width: 300px !important;
+  }
+  .homePage .videoContainer .react-player video {
+    width: 300px;
+  }
+  .homePage .menuList {
+    width: 90%;
+  }
+  .homePage .menuList .button {
+    margin-top: 0.5em;
+  }
+  .homePage .menuList .tarif .button {
+    margin-bottom: 0.5em;
+  }
+}
 /*# sourceMappingURL=homePage.css.map */
