@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/eLearn/static/css/main.e1f4c42c.chunk.css",
-    "main.js": "/eLearn/static/js/main.8ddf4555.chunk.js",
-    "main.js.map": "/eLearn/static/js/main.8ddf4555.chunk.js.map",
+    "main.css": "/eLearn/static/css/main.f1a1724a.chunk.css",
+    "main.js": "/eLearn/static/js/main.8e0cafa0.chunk.js",
+    "main.js.map": "/eLearn/static/js/main.8e0cafa0.chunk.js.map",
     "runtime-main.js": "/eLearn/static/js/runtime-main.7a7bf6f8.js",
     "runtime-main.js.map": "/eLearn/static/js/runtime-main.7a7bf6f8.js.map",
     "static/js/2.77255dab.chunk.js": "/eLearn/static/js/2.77255dab.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.f21c5146.chunk.js": "/eLearn/static/js/3.f21c5146.chunk.js",
     "static/js/3.f21c5146.chunk.js.map": "/eLearn/static/js/3.f21c5146.chunk.js.map",
     "index.html": "/eLearn/index.html",
-    "static/css/main.e1f4c42c.chunk.css.map": "/eLearn/static/css/main.e1f4c42c.chunk.css.map",
+    "static/css/main.f1a1724a.chunk.css.map": "/eLearn/static/css/main.f1a1724a.chunk.css.map",
     "static/js/2.77255dab.chunk.js.LICENSE.txt": "/eLearn/static/js/2.77255dab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7a7bf6f8.js",
     "static/js/2.77255dab.chunk.js",
-    "static/css/main.e1f4c42c.chunk.css",
-    "static/js/main.8ddf4555.chunk.js"
+    "static/css/main.f1a1724a.chunk.css",
+    "static/js/main.8e0cafa0.chunk.js"
   ]
 }
